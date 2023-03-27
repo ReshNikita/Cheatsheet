@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
+
+.nav {
+  padding: 30px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.nav__list a:hover {
+  text-decoration: underline;
+  font-size: 22px;
+  transition: 0.3s ease;
+  color: #7b2923;
+  text-shadow: 3px 3px 20px #7b1f4d, -2px 1px 30px #4a1d34;
+}
+
+.active {
+  text-shadow: 3px 3px 20px #7b1f4d, -2px 1px 30px #4a1d34;
+}
