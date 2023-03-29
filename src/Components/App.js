@@ -44,22 +44,10 @@ const App = () => {
           <Route path="/css" element={<CSS />} />
           <Route path="/js" element={<JavaScript />} />
           <Route path="/reactjs" element={<ReactJS />} />
-          <Route
-            path="/introduction"
-            element={
-              <Introduction
-                info={`Реакт - это JS-библиотека для создания UI (user interface). Легко переиспользуется, т.к. 
-                взят подход независимых компонент. Разработчик ПО из FaceBook Джордан Валке создал React. 
-                Исходный код открыт в мае 2013г.`}
-              />
-            }
-          />
-          <Route path="/components" element={<Components info={"TEWXT"} />} />
-          <Route path="/props" element={<Props info={"props"} />} />
-          <Route
-            path="/state"
-            element={<State info={"State in class components."} />}
-          />
+          <Route path="/introduction" element={<Introduction />} />
+          <Route path="/components" element={<Components />} />
+          <Route path="/props" element={<Props />} />
+          <Route path="/state" element={<State />} />
           <Route path="/lifecycle" element={<Lifecycle info={"Lifecycle"} />} />
           <Route path="/events" element={<Events info={"events"} />} />
           <Route path="/key" element={<Key info={"key"} />} />

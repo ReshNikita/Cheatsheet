@@ -1,10 +1,10 @@
 import React from "react";
 
-const State = ({ info }) => {
+const State = () => {
   return (
     <section className="section__block">
       <div>
-        <p className="section__paragraph">{info}</p>
+        <p className="section__paragraph">State</p>
       </div>
     </section>
   );
