@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
 import HTML from "./Pages/HTML";
@@ -24,6 +24,7 @@ const App = () => {
       <GlowingButton />
       <Routes>
         <Route path="/" element={<Layout />}>
+          {/* <Route path="/Cheatsheet" index element={<Layout />} /> */}
           <Route path="/html" element={<HTML />} />
           <Route path="/css" element={<CSS />} />
           <Route path="/js" element={<JavaScript />} />
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/ts" element={<TypeScript />} />
           <Route path="/other" element={<Other />} />
           <Route path="*" element={<Error />} />
+          <Route path="/Cheatsheet" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </>
